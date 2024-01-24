@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Run as  name') {
+            steps {
+                sh '''
+date
+ls
+pwd
+                '''
+            }
+        }
+    }
+}
